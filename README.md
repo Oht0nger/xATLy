@@ -1,4 +1,4 @@
-# xATLy: E_x_tending ICESat-2 **A**TL03 and ATL08 Products for **L**and and Vegetation Anal**y**ses
+# xATLy: E__x__tending ICESat-2 **A**TL03 and ATL08 Products for **L**and and Vegetation Anal**y**ses
 
 ## Description
 The toolbox facilitates the reading, visualization, and processing of ICESat-2 ATL03 and ATL08 in HDF5 format with the end goal of generating customized along-track terrain and canopy height data sets.
