@@ -1,0 +1,217 @@
+<deployment-project plugin="plugin.toolbox" plugin-version="1.0">
+  <configuration file="C:\Users\mmoonga\OneDrive\myDev\icesat2Utils\matlab\ICESat2Veg\ic2toolbox\ic2toolbox.prj" location="C:\Users\mmoonga\OneDrive\myDev\icesat2Utils\matlab\ICESat2Veg\ic2toolbox" name="ic2toolbox" target="target.toolbox" target-name="Package Toolbox">
+    <param.appname>ATLx</param.appname>
+    <param.authnamewatermark>Lonesome Malambo</param.authnamewatermark>
+    <param.email>mmoonga@tamu.edu</param.email>
+    <param.company>Texas A&amp;M University</param.company>
+    <param.summary>ICESat-2 Toolbox for Land and Vegetation Applications</param.summary>
+    <param.description>The toolbox facilitates the reading, visualization, and processing of ICESat-2 ATL03 and ATL08 in HDF5 format with the end goal of generating customized along-track terrain and canopy height data sets.</param.description>
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.output>${PROJECT_ROOT}\ATLx.mltbx</param.output>
+    <param.products.name>
+      <item>MATLAB</item>
+      <item>Curve Fitting Toolbox</item>
+      <item>Mapping Toolbox</item>
+      <item>Statistics and Machine Learning Toolbox</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+      <item>60</item>
+      <item>11</item>
+      <item>19</item>
+    </param.products.id>
+    <param.products.version>
+      <item>9.13</item>
+      <item>3.8</item>
+      <item>5.4</item>
+      <item>12.4</item>
+    </param.products.version>
+    <param.platforms />
+    <param.guid>72bd8ca0-ad89-4515-9a7d-06d4858d2d60</param.guid>
+    <param.exclude.filters>% List files contained in your toolbox folder that you would like to exclude
+% from packaging.  Excludes should be listed relative to the toolbox folder.
+% Some examples of how to specify excludes are provided below:
+%
+% A single file in the toolbox folder:
+% .svn
+%
+% A single file in a subfolder of the toolbox folder:
+% example/.svn
+%
+% All files in a subfolder of the toolbox folder:
+% example/*
+%
+% All files of a certain name in all subfolders of the toolbox folder:
+% **/.svn
+%
+% All files matching a pattern in all subfolders of the toolbox folder:
+% **/*.bak
+%
+.gitignore
+**/.git</param.exclude.filters>
+    <param.exclude.pcodedmfiles>true</param.exclude.pcodedmfiles>
+    <param.examples>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;examples&gt;
+   &lt;exampleCategory name="ic2toolbox"&gt;
+      &lt;example name="Custom Canopy and Terrain Height Calculation" type="html"&gt;
+         &lt;file type="source"&gt;/html/Custom Canopy and Terrain Height Calculation.html&lt;/file&gt;
+         &lt;file type="main"&gt;/Custom Canopy and Terrain Height Calculation.mlx&lt;/file&gt;
+         &lt;file type="thumbnail"/&gt;
+      &lt;/example&gt;
+      &lt;example name="Working with ATLx Toolbox" type="html"&gt;
+         &lt;file type="source"&gt;/html/Working with ATLx Toolbox.html&lt;/file&gt;
+         &lt;file type="main"&gt;/Working with ATLx Toolbox.mlx&lt;/file&gt;
+         &lt;file type="thumbnail"/&gt;
+      &lt;/example&gt;
+   &lt;/exampleCategory&gt;
+&lt;/examples&gt;</param.examples>
+    <param.demosxml />
+    <param.apps />
+    <param.registered.apps />
+    <param.docs>${PROJECT_ROOT}\info.xml</param.docs>
+    <param.getting.started.guide>${PROJECT_ROOT}\doc\GettingStarted.mlx</param.getting.started.guide>
+    <param.matlabpath.excludes />
+    <param.javaclasspath.excludes />
+    <param.exported.on.package>true</param.exported.on.package>
+    <param.required.addons />
+    <param.matlab.project.id />
+    <param.matlab.project.name />
+    <param.release.start />
+    <param.release.end />
+    <param.release.current.only>false</param.release.current.only>
+    <param.compatiblity.windows>true</param.compatiblity.windows>
+    <param.compatiblity.macos>true</param.compatiblity.macos>
+    <param.compatiblity.linux>true</param.compatiblity.linux>
+    <param.compatiblity.matlabonline>true</param.compatiblity.matlabonline>
+    <param.installation.map />
+    <param.additional.sw.names />
+    <param.additional.sw.licenses />
+    <param.additional.sw.win.url />
+    <param.additional.sw.mac.url />
+    <param.additional.sw.linux.url />
+    <unset>
+      <param.screenshot />
+      <param.version />
+      <param.output />
+      <param.platforms />
+      <param.exclude.pcodedmfiles />
+      <param.demosxml />
+      <param.apps />
+      <param.registered.apps />
+      <param.matlabpath.excludes />
+      <param.javaclasspath.excludes />
+      <param.required.addons />
+      <param.matlab.project.id />
+      <param.matlab.project.name />
+      <param.release.start />
+      <param.release.end />
+      <param.release.current.only />
+      <param.compatiblity.windows />
+      <param.compatiblity.macos />
+      <param.compatiblity.linux />
+      <param.compatiblity.matlabonline />
+      <param.installation.map />
+      <param.additional.sw.names />
+      <param.additional.sw.licenses />
+      <param.additional.sw.win.url />
+      <param.additional.sw.mac.url />
+      <param.additional.sw.linux.url />
+    </unset>
+    <fileset.rootdir>
+      <file>${PROJECT_ROOT}</file>
+    </fileset.rootdir>
+    <fileset.rootfiles>
+      <file>${PROJECT_ROOT}\atdplot.asv</file>
+      <file>${PROJECT_ROOT}\atdplot.m</file>
+      <file>${PROJECT_ROOT}\Atl03.m</file>
+      <file>${PROJECT_ROOT}\Atl08.m</file>
+      <file>${PROJECT_ROOT}\calculatemetrics.m</file>
+      <file>${PROJECT_ROOT}\Custom Canopy and Terrain Height Calculation.mlx</file>
+      <file>${PROJECT_ROOT}\Custom Canopy and Terrain Height Calculation.pdf</file>
+      <file>${PROJECT_ROOT}\data</file>
+      <file>${PROJECT_ROOT}\demos.xml</file>
+      <file>${PROJECT_ROOT}\doc</file>
+      <file>${PROJECT_ROOT}\extractgroundpts.m</file>
+      <file>${PROJECT_ROOT}\fitgroundmodel.m</file>
+      <file>${PROJECT_ROOT}\generatepolygons.m</file>
+      <file>${PROJECT_ROOT}\gtrack.asv</file>
+      <file>${PROJECT_ROOT}\gtrack.m</file>
+      <file>${PROJECT_ROOT}\help</file>
+      <file>${PROJECT_ROOT}\hmetrics.m</file>
+      <file>${PROJECT_ROOT}\html</file>
+      <file>${PROJECT_ROOT}\IC2.m</file>
+      <file>${PROJECT_ROOT}\info.xml</file>
+      <file>${PROJECT_ROOT}\kml2struct.m</file>
+      <file>${PROJECT_ROOT}\normalizepts.m</file>
+      <file>${PROJECT_ROOT}\robustgfit.m</file>
+      <file>${PROJECT_ROOT}\savetable.m</file>
+      <file>${PROJECT_ROOT}\Working with ATLx Toolbox.mlx</file>
+      <file>${PROJECT_ROOT}\Working with ATLx Toolbox.pdf</file>
+      <file>${PROJECT_ROOT}\writecustomsegpol.m</file>
+    </fileset.rootfiles>
+    <fileset.depfun.included />
+    <fileset.depfun.excluded />
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}" name="ATLx.mltbx" optional="false">C:\Users\mmoonga\OneDrive\myDev\icesat2Utils\matlab\ICESat2Veg\ic2toolbox\ATLx.mltbx</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2022b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
