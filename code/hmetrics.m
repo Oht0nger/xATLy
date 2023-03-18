@@ -6,11 +6,11 @@ function hdata = hmetrics(npcdata, seglength, varargin)
 %   max, te_interp (from terrain interpolation using grndFunc), and std)
 %   from input table data, npcdata, in segments of length, seglength, along
 %   ground track. Canopy height calaculations are limited to segments with
-%   9 or more points with max. height >= 2.0 meter. The output, hdata,
+%   11 or more points with max. height >= 2.0 meter. The output, hdata,
 %   also contains associated point stats (segment total, canopy and terrain
 %   totals) and segment geolocation data,- mid lat/lon, begin and end
 %   lat/lon.Table may also include various data flags, if included in prior
-%   processes.
+%   processes, see getclassedpc method for the gtrack class.
 %
 %   hdata = hmetrics(npcdata, seglength, canopy_percentiles) will
 %   also include canopy height percentiles as specified. canopy_percentiles
