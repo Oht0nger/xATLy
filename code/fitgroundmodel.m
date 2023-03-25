@@ -20,7 +20,7 @@ function [grndfunc, grnd_pts] = fitgroundmodel(pcdata,varargin)
 
 % set defaults for optional inputs
 numvarargs = length(varargin);
-optargs = {10,'smoothingspline','false'};
+optargs = {10,'smoothingspline',false};
 optargs(1:numvarargs) = varargin;
  
 % Place optional args in memorable variable names
