@@ -1,12 +1,12 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration file="C:\Users\mmala\Documents\GitHub\xATLy\toolbox\ic2toolbox.prj" location="C:\Users\mmala\Documents\GitHub\xATLy\toolbox" name="ic2toolbox" target="target.toolbox" target-name="Package Toolbox">
+  <configuration file="C:\Users\mmala\Documents\GitHub\xATLy\xatly.prj" location="C:\Users\mmala\Documents\GitHub\xATLy" name="xatly" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>xATLy</param.appname>
     <param.authnamewatermark>Lonesome Malambo</param.authnamewatermark>
     <param.email>mmoonga@tamu.edu</param.email>
     <param.company>Texas A&amp;M University</param.company>
     <param.summary>ICESat-2 Toolbox for Land and Vegetation Applications</param.summary>
     <param.description>The toolbox facilitates the reading, visualization, and processing of ICESat-2 ATL03 and ATL08 in HDF5 format with the end goal of generating customized along-track terrain and canopy height data sets.</param.description>
-    <param.screenshot>C:\Users\mmala\Documents\GitHub\xATLy\doc\xatlylogo.png</param.screenshot>
+    <param.screenshot />
     <param.version>1.0</param.version>
     <param.output>${PROJECT_ROOT}\xATLy.mltbx</param.output>
     <param.products.name>
@@ -28,7 +28,7 @@
       <item>12.4</item>
     </param.products.version>
     <param.platforms />
-    <param.guid>72bd8ca0-ad89-4515-9a7d-06d4858d2d60</param.guid>
+    <param.guid>212e0e0d-e66e-4b0f-97ce-a10cdca90704</param.guid>
     <param.exclude.filters>% List files contained in your toolbox folder that you would like to exclude
 % from packaging.  Excludes should be listed relative to the toolbox folder.
 % Some examples of how to specify excludes are provided below:
@@ -51,26 +51,12 @@
 .gitignore
 **/.git</param.exclude.filters>
     <param.exclude.pcodedmfiles>true</param.exclude.pcodedmfiles>
-    <param.examples>&lt;?xml version="1.0" encoding="utf-8"?&gt;
-&lt;examples&gt;
-   &lt;exampleCategory name="doc"&gt;
-      &lt;example name="Custom Canopy and Terrain Height Calculation" type="html"&gt;
-         &lt;file type="source"&gt;/doc/html/Custom Canopy and Terrain Height Calculation.html&lt;/file&gt;
-         &lt;file type="main"&gt;/doc/Custom Canopy and Terrain Height Calculation.mlx&lt;/file&gt;
-         &lt;file type="thumbnail"/&gt;
-      &lt;/example&gt;
-      &lt;example name="Working with xATLy Toolbox" type="html"&gt;
-         &lt;file type="source"&gt;/doc/html/Working with xATLy Toolbox.html&lt;/file&gt;
-         &lt;file type="main"&gt;/doc/Working with xATLy Toolbox.mlx&lt;/file&gt;
-         &lt;file type="thumbnail"/&gt;
-      &lt;/example&gt;
-   &lt;/exampleCategory&gt;
-&lt;/examples&gt;</param.examples>
+    <param.examples />
     <param.demosxml />
     <param.apps />
     <param.registered.apps />
-    <param.docs>C:\Users\mmala\Documents\GitHub\xATLy\code\info.xml</param.docs>
-    <param.getting.started.guide>C:\Users\mmala\Documents\GitHub\xATLy\code\doc\GettingStarted.mlx</param.getting.started.guide>
+    <param.docs>${PROJECT_ROOT}\code\info.xml</param.docs>
+    <param.getting.started.guide />
     <param.matlabpath.excludes />
     <param.javaclasspath.excludes />
     <param.exported.on.package>true</param.exported.on.package>
@@ -95,13 +81,16 @@
     <param.additional.sw.mac.url />
     <param.additional.sw.linux.url />
     <unset>
+      <param.screenshot />
       <param.version />
       <param.output />
       <param.platforms />
       <param.exclude.pcodedmfiles />
+      <param.examples />
       <param.demosxml />
       <param.apps />
       <param.registered.apps />
+      <param.getting.started.guide />
       <param.matlabpath.excludes />
       <param.javaclasspath.excludes />
       <param.matlab.project.id />
@@ -121,37 +110,34 @@
       <param.additional.sw.linux.url />
     </unset>
     <fileset.rootdir>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code</file>
+      <file>${PROJECT_ROOT}\code</file>
     </fileset.rootdir>
     <fileset.rootfiles>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\atdplot.asv</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\atdplot.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\Atl03.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\Atl08.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\calculatemetrics.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\demos.xml</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\doc</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\extractgroundpts.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\fitgroundmodel.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\generatepolygons.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\gtrack.asv</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\gtrack.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\help</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\hmetrics.asv</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\hmetrics.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\IC2.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\info.xml</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\kml2struct.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\normalizepts.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\robustgfit.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\savetable.m</file>
-      <file>C:\Users\mmala\Documents\GitHub\xATLy\code\writecustomsegpol.m</file>
+      <file>${PROJECT_ROOT}\code\atdplot.asv</file>
+      <file>${PROJECT_ROOT}\code\atdplot.m</file>
+      <file>${PROJECT_ROOT}\code\Atl03.m</file>
+      <file>${PROJECT_ROOT}\code\Atl08.m</file>
+      <file>${PROJECT_ROOT}\code\calculatemetrics.m</file>
+      <file>${PROJECT_ROOT}\code\extractgroundpts.m</file>
+      <file>${PROJECT_ROOT}\code\fitgroundmodel.m</file>
+      <file>${PROJECT_ROOT}\code\generatepolygons.m</file>
+      <file>${PROJECT_ROOT}\code\gtrack.asv</file>
+      <file>${PROJECT_ROOT}\code\gtrack.m</file>
+      <file>${PROJECT_ROOT}\code\hmetrics.asv</file>
+      <file>${PROJECT_ROOT}\code\hmetrics.m</file>
+      <file>${PROJECT_ROOT}\code\IC2.m</file>
+      <file>${PROJECT_ROOT}\code\info.xml</file>
+      <file>${PROJECT_ROOT}\code\kml2struct.m</file>
+      <file>${PROJECT_ROOT}\code\normalizepts.m</file>
+      <file>${PROJECT_ROOT}\code\robustgfit.m</file>
+      <file>${PROJECT_ROOT}\code\savetable.m</file>
+      <file>${PROJECT_ROOT}\code\writecustomsegpol.m</file>
     </fileset.rootfiles>
     <fileset.depfun.included />
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="xATLy.mltbx" optional="false">C:\Users\mmala\Documents\GitHub\xATLy\toolbox\xATLy.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="xATLy.mltbx" optional="false">C:\Users\mmala\Documents\GitHub\xATLy\xATLy.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>
