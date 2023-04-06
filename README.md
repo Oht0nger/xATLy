@@ -9,12 +9,16 @@ The toolbox facilitates the reading, visualization, and processing of ICESat-2 A
 * Statistics toolbox
 ## Features
 Overview of the toolbox features include:
-* Read and plot raw ATL03 point cloud
-* Derive and plot classified ATL03 point cloud 
+* Read and write raw ATL03 point cloud
+* Derive classified ATL03 point cloud 
+* Derive aboveground level (normalized) point clouds
 * Read ATL08 segment-level, canopy and terrain attributes
-* Generate auxillary reference ground track and ATL08 segment polygons
-* Calculate customized canopy and terrain heights
-* Generate customized segment polygons 
+* Plot ATL03 point clouds
+* Calculate custom canopy and terrain heights
+* Generate and write auxillary geospatial layers as shapefile or KML
+  * Reference ground tracks
+  * 100-m ATL08 segment-level polygons
+  * Custom segment-level polygons
 ## Examples
 Explore the following examples on how to use the toolbox features.
 * Working with ICE2Veg toolbox |[pdf](https://github.com/Oht0nger/xatlas/blob/master/doc/Working%20with%20ATLx%20Toolbox.pdf)
