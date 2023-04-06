@@ -14,9 +14,10 @@ Overview of the toolbox features include:
 * Read ATL08 segment-level, canopy and terrain attributes
 * Plot ATL03 point clouds
 * Calculate custom canopy and terrain heights
-* Generate auxillary reference ground tracks as shapefile or KML
-** Generate and write 100-m ATL08 segment polygons as shapefile or KML
-* Generate and write custom segment polygons as shapefile or KML
+* Generate and write auxillary geospatial layers as shapefile or KML
+  * reference ground tracks
+  * 100-m ATL08 segment-level polygons
+  * Custom segment-level polygons
 ## Examples
 Explore the following examples on how to use the toolbox features.
 * Working with ICE2Veg toolbox |[pdf](https://github.com/Oht0nger/xatlas/blob/master/doc/Working%20with%20ATLx%20Toolbox.pdf)
