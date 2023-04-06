@@ -15,7 +15,7 @@ Overview of the toolbox features include:
 * Plot ATL03 point clouds
 * Calculate custom canopy and terrain heights
 * Generate auxillary reference ground tracks as shapefile or KML
-* Generate and write 100-m ATL08 segment polygons as shapefile or KML
+** Generate and write 100-m ATL08 segment polygons as shapefile or KML
 * Generate and write custom segment polygons as shapefile or KML
 ## Examples
 Explore the following examples on how to use the toolbox features.
