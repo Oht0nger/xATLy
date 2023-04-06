@@ -11,11 +11,12 @@ The toolbox facilitates the reading, visualization, and processing of ICESat-2 A
 Overview of the toolbox features include:
 * Read and write raw ATL03 point cloud
 * Derive classified ATL03 point cloud 
+* Derive aboveground level (normalized) point clouds
 * Read ATL08 segment-level, canopy and terrain attributes
 * Plot ATL03 point clouds
 * Calculate custom canopy and terrain heights
 * Generate and write auxillary geospatial layers as shapefile or KML
-  * reference ground tracks
+  * Reference ground tracks
   * 100-m ATL08 segment-level polygons
   * Custom segment-level polygons
 ## Examples
