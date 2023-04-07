@@ -146,6 +146,7 @@ classdef gtrack
                     for i = 1:length(reqattr)
                         try
                             atdat = double(h5read(obj.atl08.filepath,[bm,'/land_segments/',reqattr{i}])); %
+                            atdat(atdat>3.0e+38) = NaN;
                         catch ME
                             warning(ME.message)
                             fprintf('***** %s not be included in output ******\n',reqattr{i})
@@ -161,6 +162,7 @@ classdef gtrack
                     for i = 1:length(reqattr)
                         try
                             atdat = double(h5read(obj.atl08.filepath,[bm,'/land_segments/canopy/',reqattr{i}])); %
+                            atdat(atdat>3.0e+38) = NaN;
                             if ~isvector(atdat)
                                 atdat = atdat';
                             end
@@ -179,6 +181,7 @@ classdef gtrack
                     for i = 1:length(reqattr)
                         try
                             atdat = double(h5read(obj.atl08.filepath,[bm,'/land_segments/terrain/',reqattr{i}])); %
+                            atdat(atdat>3.0e+38) = NaN;
                             if ~isvector(atdat)
                                 atdat = atdat';
                             end
