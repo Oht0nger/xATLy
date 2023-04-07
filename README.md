@@ -21,5 +21,5 @@ Overview of the toolbox features include:
   * Custom segment-level polygons
 ## Examples
 Explore the following examples on how to use the toolbox features.
-* Working with ICE2Veg toolbox |[pdf](https://github.com/Oht0nger/xatlas/blob/master/doc/Working%20with%20ATLx%20Toolbox.pdf)
+* Working with ICE2Veg toolbox |[pdf](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Working%20with%20xATLy%20Toolbox.pdf)
 * Custom Canopy and Terrain Height Calculations |[pdf](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Custom%20Canopy%20and%20Terrain%20Height%20Calculation.pdf)
