@@ -22,4 +22,4 @@ Overview of the toolbox features include:
 ## Examples
 Explore the following examples on how to use the toolbox features.
 * Working with ICE2Veg toolbox |[pdf](https://github.com/Oht0nger/xatlas/blob/master/doc/Working%20with%20ATLx%20Toolbox.pdf)
-* Custom Canopy and Terrain Height Calculations | pdf
+* Custom Canopy and Terrain Height Calculations |[pdf](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Custom%20Canopy%20and%20Terrain%20Height%20Calculation.pdf)
