@@ -21,5 +21,5 @@ Overview of the toolbox features include:
   * Custom segment-level polygons
 ## Examples
 Explore the following examples on how to use the toolbox features.
-* Working with ICE2Veg toolbox [MATLAB Live Script]|[pdf](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Working%20with%20xATLy%20Toolbox.pdf)
-* Custom Canopy and Terrain Height Calculations [MATLAB Live Script] |[pdf](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Custom%20Canopy%20and%20Terrain%20Height%20Calculation.pdf)
+* Working with ICE2Veg toolbox [MATLAB Live Script](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Working%20with%20xATLy%20Toolbox.mlx)|[pdf](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Working%20with%20xATLy%20Toolbox.pdf)
+* Custom Canopy and Terrain Height Calculations [MATLAB Live Script](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Custom%20Canopy%20and%20Terrain%20Height%20Calculation.mlx)|[pdf](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Custom%20Canopy%20and%20Terrain%20Height%20Calculation.pdf)
