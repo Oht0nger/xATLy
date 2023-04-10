@@ -5,9 +5,6 @@ The xATLy toolbox facilitates the reading, visualization, and processing of ICES
 <img src = "https://github.com/Oht0nger/xATLy/blob/main/code/doc/xatly_ch.png" width = "900" />
 </p>
 
-## System Requirements and toolbox installation
-* The toolbox requires MATLAB (Release 2021+), the Curve fitting toolbox, Mapping toolbox and the Statistics toolbox
-* To install the toolbox, download the [package file](https://github.com/Oht0nger/xATLy/blob/main/toolbox/xATLy.mltbx) and follow [MATLAB'S documentation](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html) on installing packages.
 ## Features
 Overview of the toolbox features include:
 * Read and write raw ATL03 point cloud
@@ -24,3 +21,6 @@ Overview of the toolbox features include:
 Explore the following examples on how to use the toolbox features.
 * Working with ICE2Veg toolbox | [MATLAB Live Script](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Working%20with%20xATLy%20Toolbox.mlx) | [pdf](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Working%20with%20xATLy%20Toolbox.pdf)
 * Custom Canopy and Terrain Height Calculations | [MATLAB Live Script](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Custom%20Canopy%20and%20Terrain%20Height%20Calculation.mlx) | [pdf](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Custom%20Canopy%20and%20Terrain%20Height%20Calculation.pdf)
+## System Requirements and toolbox installation
+* The toolbox requires MATLAB (Release 2021+), the Curve fitting toolbox, Mapping toolbox and the Statistics toolbox
+* To install the toolbox, download the [package file](https://github.com/Oht0nger/xATLy/blob/main/toolbox/xATLy.mltbx) and follow [MATLAB'S documentation](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html) on installing packages.
