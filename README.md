@@ -1,10 +1,10 @@
 # xATLy: E*x*tending ICESat-2 **A**TL03 and ATL08 Products for **L**and and Vegetation Anal**y**ses
+## Overview
+The xATLy toolbox facilitates the reading, visualization, and processing of ICESat-2 ATL03 and ATL08 in HDF5 format with the end goal of generating customized along-track terrain and canopy height data sets.
 <p align="center">
 <img src = "https://github.com/Oht0nger/xATLy/blob/main/code/doc/xatly_ch.png" width = "900" />
 </p>
 
-## Description
-The xATLy toolbox facilitates the reading, visualization, and processing of ICESat-2 ATL03 and ATL08 in HDF5 format with the end goal of generating customized along-track terrain and canopy height data sets.
 ## System Requirements
 * MATLAB Release 2021+
 * Curve fitting toolbox
