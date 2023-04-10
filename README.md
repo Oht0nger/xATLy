@@ -7,7 +7,7 @@ The xATLy toolbox facilitates the reading, visualization, and processing of ICES
 
 ## System Requirements and toolbox installation
 * The toolbox requires MATLAB (Release 2021+), the Curve fitting toolbox, Mapping toolbox and the Statistics toolbox
-* To install the toolbox, download the [package file](https://github.com/Oht0nger/xATLy/blob/main/toolbox/xATLy.mltbx) and follow [MATLAB'S documentation](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html)
+* To install the toolbox, download the [package file](https://github.com/Oht0nger/xATLy/blob/main/toolbox/xATLy.mltbx) and follow [MATLAB'S documentation](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html) on installing packages.
 ## Features
 Overview of the toolbox features include:
 * Read and write raw ATL03 point cloud
