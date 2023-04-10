@@ -4,7 +4,7 @@
 </p>
 
 ## Description
-The toolbox facilitates the reading, visualization, and processing of ICESat-2 ATL03 and ATL08 in HDF5 format with the end goal of generating customized along-track terrain and canopy height data sets.
+The xATLy toolbox facilitates the reading, visualization, and processing of ICESat-2 ATL03 and ATL08 in HDF5 format with the end goal of generating customized along-track terrain and canopy height data sets.
 ## System Requirements
 * MATLAB Release 2021+
 * Curve fitting toolbox
