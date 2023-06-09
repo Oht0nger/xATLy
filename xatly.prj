@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration file="C:\Users\mmala\Documents\GitHub\xATLy\xatly.prj" location="C:\Users\mmala\Documents\GitHub\xATLy" name="xatly" target="target.toolbox" target-name="Package Toolbox">
+  <configuration file="F:\devs\xATLy\xatly.prj" location="F:\devs\xATLy" name="xatly" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>xATLy</param.appname>
     <param.authnamewatermark>Lonesome Malambo</param.authnamewatermark>
     <param.email>mmoonga@tamu.edu</param.email>
@@ -51,12 +51,26 @@
 .gitignore
 **/.git</param.exclude.filters>
     <param.exclude.pcodedmfiles>true</param.exclude.pcodedmfiles>
-    <param.examples />
+    <param.examples>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;examples&gt;
+   &lt;exampleCategory name="doc"&gt;
+      &lt;example name="Custom Canopy and Terrain Height Calculation" type="html"&gt;
+         &lt;file type="source"&gt;/doc/html/Custom Canopy and Terrain Height Calculation.html&lt;/file&gt;
+         &lt;file type="main"&gt;/doc/Custom Canopy and Terrain Height Calculation.mlx&lt;/file&gt;
+         &lt;file type="thumbnail"/&gt;
+      &lt;/example&gt;
+      &lt;example name="Working with xATLy Toolbox" type="html"&gt;
+         &lt;file type="source"&gt;/doc/html/Working with xATLy Toolbox.html&lt;/file&gt;
+         &lt;file type="main"&gt;/doc/Working with xATLy Toolbox.mlx&lt;/file&gt;
+         &lt;file type="thumbnail"/&gt;
+      &lt;/example&gt;
+   &lt;/exampleCategory&gt;
+&lt;/examples&gt;</param.examples>
     <param.demosxml />
     <param.apps />
     <param.registered.apps />
     <param.docs>${PROJECT_ROOT}\code\info.xml</param.docs>
-    <param.getting.started.guide />
+    <param.getting.started.guide>${PROJECT_ROOT}\code\doc\GettingStarted.mlx</param.getting.started.guide>
     <param.matlabpath.excludes />
     <param.javaclasspath.excludes />
     <param.exported.on.package>true</param.exported.on.package>
@@ -86,11 +100,9 @@
       <param.output />
       <param.platforms />
       <param.exclude.pcodedmfiles />
-      <param.examples />
       <param.demosxml />
       <param.apps />
       <param.registered.apps />
-      <param.getting.started.guide />
       <param.matlabpath.excludes />
       <param.javaclasspath.excludes />
       <param.matlab.project.id />
@@ -113,17 +125,17 @@
       <file>${PROJECT_ROOT}\code</file>
     </fileset.rootdir>
     <fileset.rootfiles>
-      <file>${PROJECT_ROOT}\code\atdplot.asv</file>
       <file>${PROJECT_ROOT}\code\atdplot.m</file>
       <file>${PROJECT_ROOT}\code\Atl03.m</file>
       <file>${PROJECT_ROOT}\code\Atl08.m</file>
-      <file>${PROJECT_ROOT}\code\calculatemetrics.m</file>
+      <file>${PROJECT_ROOT}\code\demos.xml</file>
+      <file>${PROJECT_ROOT}\code\doc</file>
       <file>${PROJECT_ROOT}\code\extractgroundpts.m</file>
       <file>${PROJECT_ROOT}\code\fitgroundmodel.m</file>
       <file>${PROJECT_ROOT}\code\generatepolygons.m</file>
       <file>${PROJECT_ROOT}\code\gtrack.asv</file>
       <file>${PROJECT_ROOT}\code\gtrack.m</file>
-      <file>${PROJECT_ROOT}\code\hmetrics.asv</file>
+      <file>${PROJECT_ROOT}\code\help</file>
       <file>${PROJECT_ROOT}\code\hmetrics.m</file>
       <file>${PROJECT_ROOT}\code\IC2.m</file>
       <file>${PROJECT_ROOT}\code\info.xml</file>
@@ -137,13 +149,14 @@
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="xATLy.mltbx" optional="false">C:\Users\mmala\Documents\GitHub\xATLy\xATLy.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="xATLy.mltbx" optional="false">F:\devs\xATLy\xATLy.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>
       <root>C:\Program Files\MATLAB\R2022b</root>
       <toolboxes>
         <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
         <toolbox name="gpucoder" />
         <toolbox name="fixedpoint" />
         <toolbox name="matlabhdlcoder" />
@@ -153,6 +166,11 @@
         <matlabcoder>
           <enabled>true</enabled>
         </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
       </toolbox>
       <toolbox>
         <gpucoder>

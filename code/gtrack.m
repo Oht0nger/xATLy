@@ -147,6 +147,9 @@ classdef gtrack
                         try
                             atdat = double(h5read(obj.atl08.filepath,[bm,'/land_segments/',reqattr{i}])); %
                             atdat(atdat>3.0e+38) = NaN;
+                            if ~isvector(atdat)
+                                atdat = atdat';
+                            end
                         catch ME
                             warning(ME.message)
                             fprintf('***** %s not be included in output ******\n',reqattr{i})
@@ -902,17 +905,53 @@ classdef gtrack
             npcdata = normalizepts(pcdata,grndFunc, removeptsbelow);
         end
 
-        function attrdata = getATL08data(obj, varargin)
+        function attrdata = getATL08data(obj,varargin)
+            % getATL08data Read ATL08 segnemt level attribute data in the
+            % land_segments, canopy or terrain h5 data groups. Set the
+            % following inputs to read to control what the method returns
+            %    - landseg_attr, cell array, to retrieve attributes from
+            %    the land_segments group. Use obj.showattr('land_seg') to
+            %    list available attributes in this group.
+            %    - ca_attr, cell array, to retrieve attributes under the
+            %    canopy group. Use obj.showattr('canopy') to list available 
+            %    attributes in this group.
+            %    - te_attr, cell array, to retrieve attributes under the
+            %    terrain group.Use obj.showattr('terrain') to list available 
+            %     attributes in this group.
+            % 
+            %    attrdata = obj.getATL08data(). This a default call and will 
+            %    returns the 'longitude','latitude','n_seg_ph'
+            %    from the land_segments group,'h_canopy' and 'n_ca_photons' from
+            %    the canopy group and 'h_te_best_fit' and 'n_te_photons' from
+            %    the terrain group. 
+            %    It is the same as obj.getATL08data(landseg_attr, ca_attr, te_attr),
+            %    where landseg_attr = {'longitude','latitude','n_seg_ph'},
+            %          ca_attr = {'h_canopy','n_ca_photons'} and
+            %          te_attr = {'n_te_photons','h_te_best_fit'}
+            %
+            %    attrdata = obj.getATL08data({'longitude','latitude'})
+            %    returns the longitude and latitude values from the land
+            %    segments group, setting the ca_attr and te_attr to their
+            %    default values
+            %    
+            %   Note: Each column in attributes that are not vectors e.g. longitude_20m
+            %   for the land_segments group or h_canopy_20m from the canopy
+            %   group will be represented separately e.g. longitude_20m_1,
+            %   longitude_20m_2,... longitude_20_5, for the five columns from the
+            %   longitude_20m attribute.
+            %
+            % Lonesome Malambo 08/8/2021, Texas A&M Univeristy
+
             % set defaults for optional inputs
             numvarargs = length(varargin);
-            optargs = {{'longitude','latitude','n_seg_ph'},{'h_canopy'},{'h_te_mean'}};
+            optargs = {{'longitude','latitude','n_seg_ph'},{'h_canopy','n_ca_photons'},...
+                {'n_te_photons','h_te_best_fit'}};
             optargs(1:numvarargs) = varargin;
-
             % Place optional args in memorable variable names
             [landseg_attr, ca_attr, te_attr] = optargs{:};
-
-            isset = 0;
+            
             attrdata = [];
+            isset = 0;
             if ~isempty(landseg_attr)
                 attrdata = obj.getattrdata('land_seg',landseg_attr);
                 isset = 1;
@@ -941,7 +980,6 @@ classdef gtrack
                     attrdata = obj.getattrdata('terrain',te_attr);
                 end
             end
-
         end
 
         function showattr(obj, attrtype)
