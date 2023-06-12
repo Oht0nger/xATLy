@@ -26,5 +26,9 @@ Explore the following examples on how to use the toolbox features.
 * The toolbox requires MATLAB (Release 2021+), the Curve fitting toolbox, Mapping toolbox and the Statistics toolbox
 * To install the toolbox, download the [package file](https://github.com/Oht0nger/xATLy/blob/main/toolbox/xATLy.mltbx) and follow [MATLAB'S documentation](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html) on installing packages.
 
-[![View xATLy on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/130834-xatly)
+Also available on [![View xATLy on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/130834-xatly)
+
+## Cite As
+Lonesome Malambo (2023). xATLy: Extending ICESat-2 ATL03 and ATL08 Products for Land and Vegetation Analyses (https://github.com/Oht0nger/xATLy/releases/tag/1.0.0), GitHub. Retrieved *Retrieval date*.
+
 
