@@ -21,7 +21,14 @@ Overview of the toolbox features include:
 Explore the following examples on how to use the toolbox features.
 * Working with ICE2Veg toolbox | [MATLAB Live Script](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Working%20with%20xATLy%20Toolbox.mlx) | [pdf](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Working%20with%20xATLy%20Toolbox.pdf)
 * Custom Canopy and Terrain Height Calculations | [MATLAB Live Script](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Custom%20Canopy%20and%20Terrain%20Height%20Calculation.mlx) | [pdf](https://github.com/Oht0nger/xATLy/blob/main/code/doc/Custom%20Canopy%20and%20Terrain%20Height%20Calculation.pdf)
+
 ## System Requirements and toolbox installation
 * The toolbox requires MATLAB (Release 2021+), the Curve fitting toolbox, Mapping toolbox and the Statistics toolbox
 * To install the toolbox, download the [package file](https://github.com/Oht0nger/xATLy/blob/main/toolbox/xATLy.mltbx) and follow [MATLAB'S documentation](https://www.mathworks.com/help/matlab/matlab_env/get-add-ons.html) on installing packages.
+
+Also available on [![View xATLy on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/130834-xatly)
+
+## Cite As
+Lonesome Malambo (2023). xATLy: Extending ICESat-2 ATL03 and ATL08 Products for Land and Vegetation Analyses (https://github.com/Oht0nger/xATLy/releases/tag/1.0.0), GitHub. Retrieved *Retrieval date*.
+
 
